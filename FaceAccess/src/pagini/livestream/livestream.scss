@@ -1,0 +1,25 @@
+.livestream {
+    display: flex;
+    width: 100%;
+
+    .livestreamContainer {
+        flex: 6;
+        padding: 20px;
+
+        .titlu {
+            width: 100%;
+            font-size: 24px;
+            color: gray;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        img {
+            width: 832px;
+            height: 624px;
+            border-radius: 30px;
+        }
+    }
+}

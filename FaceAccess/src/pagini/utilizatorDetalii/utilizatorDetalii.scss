@@ -1,0 +1,115 @@
+.utilizatorDetalii {
+    display: flex;
+    width: 100;
+
+    .utilizatorDetaliiContainer {
+        flex: 6;
+
+        .top {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+
+            .stanga {
+                flex: 1;
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                padding: 20px;
+                position: relative;
+
+                .editeazaButon {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 5px;
+                    font-size: 14px;
+                    color: #7451f8;
+                    background-color: #7551f818;
+                    cursor: pointer;
+                    border-radius: 0px 0px 0px 5px;
+                }
+
+                .stergeButon {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 5px;
+                    font-size: 14px;
+                    color: red;
+                    background-color: #f8515118;
+                    cursor: pointer;
+                    border-radius: 0px 0px 5px 0px;
+                }
+
+                .articol {
+                    padding-top: 20px;
+                    align-items: center;
+                    display: flex;
+                    gap: 20px;
+
+                    .articolImagine {
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        object-fit: contain;
+                    }
+
+                    .detalii {
+                        .articolTitlu {
+                            margin-bottom: 10px;
+                            color: #555;
+                        }
+
+                        .detaliiArticol {
+                            margin-bottom: 10px;
+                            font-size: 14px;
+
+                            .articolNume {
+                                font-weight: bold;
+                                color: gray;
+                                margin-right: 5px; 
+                            }
+
+                            .articolStatus {
+                                align-items: center;
+                                padding: 5px;
+                                border-radius: 5px;
+                        
+                                &.intrat {
+                                    background-color: rgba(0, 128, 0, 0.2);
+                                    color: green;
+                                }
+                        
+                                &.iesit {
+                                    background-color: rgba(255, 217, 0, 0.05);
+                                    color: goldenrod;
+                                }
+                            }
+
+                            .articolValoare {
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .dreapta {
+                flex: 2;
+            }
+        }
+        
+        .jos {
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            padding: 20px;
+            margin: 10px 20px;
+        }
+    
+        .titlu {
+            font-size: 16px;
+            color: lightgray;
+            margin-bottom: 20px;
+        }
+    }
+}
